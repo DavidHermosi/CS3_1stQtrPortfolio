@@ -9,13 +9,25 @@
                 <input id="maxAge" />
             </label></br>
             <label> Enter number of snacks
-                <input id="age" />
+                <input id="snacks" />
             </label></br>
 
-            <p>
-                Result:
-                <span id="result"></span>
-            </p>
-            <button>
+            
+            <button onclick="calculateSnacks()">
                 Accept Input
             </button>
+                <p>
+                    Result:
+                    <span id="result"></span>
+                </p>
+            <script>
+                function calculateSnacks(){
+                    let age = document.getElementById("age").value;
+                    let maxAge = document.getElementById("maxAge").value;
+                    let snacks = document.getElementById("snacks").value;
+                    let totalRequired = (maxAge - age) * (snacks * 365);
+                    document.getElementById("result").innerHTML = "You will eat " + totalRequired + " snacks in your lifetime.";
+                    
+                }
+            </script>
+        </body>

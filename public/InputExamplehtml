@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1>Greeting</h1>
+        <label> What is your greeting?
+            <input id ="Greeting"/>
+
+        </label>
+        <P> <span id = "Greeting" > </span></P>
+
+        <script>
+            function checkGreet
+        </script>
+    </body>
+</html>
