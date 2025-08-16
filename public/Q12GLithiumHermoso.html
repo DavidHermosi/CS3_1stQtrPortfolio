@@ -2,20 +2,38 @@
 <html>
 <body>
 
-    <h2> Q1 2nd Graded Exercise submitted by name of section</h2>
+    <h2> Q1 2nd Graded Exercise submitted by David Hermoso of 9Lithium </h2>
 
-    <label>
-        
-    </label>
-    
+    <label> Meal Price
+        <input id = "price"/>
+    </label></br>
+
+    <label> Tip
+        <input id = "tip"/>   
+    </label></br>
+
+    <label> Service Charge
+        <input id = "serviceCharge"/>
+    </label></br>
+
+    <button onclick="totalMeal()">
+        Accept Input
+    </button>
+    <p> Total Meal: <span id="result"></span></p>
 
     <script>
         function totalMeal() {
-              // place your JS code here
-            
-         
-        }
-    </script>
+             let mp = document.getElementById("price").value;
+             let tip = document.getElementById("tip").value;
+             let sc = document.getElementById("serviceCharge").value;
+             let totalCost = parseFloat(mp) + parseFloat(tip) + (parseFloat(sc) / 100 * parseFloat(mp));
 
+            document.getElementById("result").innerHTML = "Total Meal: " + totalCost.toFixed(2);
+            }
+    </script>
+<footer>
+    <p>Commonly used JavaScript number objects: Introduction | PSHS-MC KHub. (n.d.). </p>   
+    <p> <a href="https://khub.mc.pshs.edu.ph/mod/book/view.php?id=2760"></a></p>
+</footer>
 </body>
 </html>
