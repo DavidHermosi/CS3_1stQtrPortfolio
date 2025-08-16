@@ -1,0 +1,21 @@
+
+<body>   
+   <p> 
+      This is my first non-graded exercise to practice the use
+      of variables and displaying results as pop-up dialog box or
+      on the browser on the console.
+   </p>
+   <script>
+        // let, var, const
+        // declare variables
+        let age=57;
+        let maxAge = 100;
+        let numPerDay = 5;
+        // determine how many snacks needed until 100 year
+        let totalRequired = (numPerDay * 365) * (maxAge - age); 
+        // display on browser 
+        document.write("You will need " + totalRequired + " to last you until the ripe old age of " + maxAge);
+        alert(`Your will need ${totalRequired} to last you until the ripe old age of ${maxAge}`);
+        console.log("You will need "+ totalRequired + " to last you until the ripe old age of " + maxAge);
+   </script>
+</body>

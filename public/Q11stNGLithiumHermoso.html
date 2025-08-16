@@ -1,10 +1,33 @@
-<body>
-        <script>
-            let food = "milk";
-            let age = 14;
-            let maxAge = 100;
-            let numPerDay = 3;
-            let totalRequired = (numPerDay * 365) * (maxAge - age);
-            document.write("You will need " + totalRequired + " glasses of milk until the ripe old age of " + maxAge + ".");
-        </script>
-</body>
+
+        <body>
+            <h1>Snack Counter</h1>
+            <label> Enter your age
+                <input id="age" />
+            </label></br>
+
+            <label> Enter your Max age
+                <input id="maxAge" />
+            </label></br>
+            <label> Enter number of snacks
+                <input id="snacks" />
+            </label></br>
+
+            
+            <button onclick="calculateSnacks()">
+                Accept Input
+            </button>
+                <p>
+                    Result:
+                    <span id="result"></span>
+                </p>
+            <script>
+                function calculateSnacks(){
+                    let age = document.getElementById("age").value;
+                    let maxAge = document.getElementById("maxAge").value;
+                    let snacks = document.getElementById("snacks").value;
+                    let totalRequired = (maxAge - age) * (snacks * 365);
+                    document.getElementById("result").innerHTML = "You will eat " + totalRequired + " snacks in your lifetime.";
+                    
+                }
+            </script>
+        </body>
