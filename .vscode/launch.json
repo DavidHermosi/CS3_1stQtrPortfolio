@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Q11stNGLithiumHermoso.html",
+            "file": "c:\\Users\\LITHIUM\\Desktop\\CS3_1stQtrPortfolio_LithiumHERMOSO\\CS3_1stQtrPortfolio-1\\public\\Q11stNGLithiumHermoso.html"
+        }
+    ]
+}
